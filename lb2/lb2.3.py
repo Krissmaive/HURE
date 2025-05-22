@@ -31,4 +31,4 @@ def filter_ips(input_file_path, output_file_path, allowed_ips):
 # Виклик
 if __name__ == "__main__":
     allowed_ips = ["127.0.0.1", "192.168.1.1", "10.0.0.2"]
-    filter_ips("apache_logs.txt", "allowed_ip_report.txt", allowed_ips)
+    filter_ips("input_file_path.txt", "allowed_ip_report.txt", allowed_ips)
