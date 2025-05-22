@@ -26,7 +26,6 @@ class Administrator(User):
     def add_permission(self, permission):
         self.permissions.append(permission)
 
-
 class RegularUser(User):
     def __init__(self, username, password):
         super().__init__(username, password)
@@ -34,7 +33,6 @@ class RegularUser(User):
 
     def update_last_login(self):
         self.last_login = datetime.now()
-
 
 class GuestUser(User):
     def __init__(self):
